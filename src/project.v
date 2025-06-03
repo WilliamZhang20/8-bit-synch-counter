@@ -18,7 +18,7 @@ module tt_um_8bit_counter (
 
   wire [7:0] counter_data;
 
-  8bit_counter counter_inst (
+  counter_8_bit counter_inst (
     .clk(clk),
     .rst(~rst_n),
     .load_e(uio_in[0]),
@@ -28,9 +28,9 @@ module tt_um_8bit_counter (
   );
 
   // All output pins must be assigned. If not used, assign to 0.
-  assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
-  assign uio_out = 0;
-  assign uio_oe  = 0;
+  assign uo_out  = counter_data;
+  assign uio_out = 0; 
+  assign uio_oe  = {8{uio_in[1]}};
 
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, uio_in[7:2]};

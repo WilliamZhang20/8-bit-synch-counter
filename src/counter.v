@@ -1,4 +1,4 @@
-module 8bit_counter (
+module counter_8_bit (
     input wire clk,
     input wire rst,
     input wire load_e,
@@ -9,7 +9,7 @@ module 8bit_counter (
 
     reg [7:0] count;
 
-    always_ff @ (posedge clk) begin
+    always @ (posedge clk) begin
         if (rst) begin
             count <= 8'b0;
         end else if (load_e) begin
@@ -19,6 +19,6 @@ module 8bit_counter (
         end
     end
 
-    assign out_data = out_e ? counter : 8'bz;
+    assign out_data = out_e ? count : 8'bz;
 
 endmodule
