@@ -28,8 +28,8 @@ module tt_um_8bit_counter (
   );
 
   // All output pins must be assigned. If not used, assign to 0.
-  assign uo_out  = counter_data;
-  assign uio_out = 0; 
+  assign uo_out  = 0;
+  assign uio_out = counter_data; 
   assign uio_oe  = {8{uio_in[1]}};
 
   // List all unused inputs to prevent warnings

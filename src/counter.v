@@ -19,6 +19,6 @@ module counter_8_bit (
         end
     end
 
-    assign out_data = out_e ? count : 8'bz;
+    assign out_data = out_e ? count : 8'b0;
 
 endmodule

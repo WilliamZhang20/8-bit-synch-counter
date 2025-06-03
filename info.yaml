@@ -34,24 +34,24 @@ pinout:
   ui[7]: "LOAD_VAL[7]"
 
   # Outputs
-  uo[0]: "CNTR[0]"
-  uo[1]: "CNTR[1]"
-  uo[2]: "CNTR[2]"
-  uo[3]: "CNTR[3]"
-  uo[4]: "CNTR[4]"
-  uo[5]: "CNTR[5]"
-  uo[6]: "CNTR[6]"
-  uo[7]: "CNTR[7]"
+  uo[0]: ""
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: "LOAD_EN (input)"
-  uio[1]: "OUT_EN (input)"
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "BIDIR: LOAD_EN (input) / CNTR[0] (output)"
+  uio[1]: "BIDIR: OUT_EN (input) / CNTR[1] (output)"
+  uio[2]: "CNTR[2] (output)"
+  uio[3]: "CNTR[3] (output)"
+  uio[4]: "CNTR[4] (output)"
+  uio[5]: "CNTR[5] (output)"
+  uio[6]: "CNTR[6] (output)"
+  uio[7]: "CNTR[7] (output)"
 
 # Do not change!
 yaml_version: 6
