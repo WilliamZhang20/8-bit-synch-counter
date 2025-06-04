@@ -9,11 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Increases count on every clock cycle, or loads given value if enabled
+Increases count on every clock cycle, or loads given value if enabled.
+Receiving outputs is also an option by the user.
 
 ## How to test
 
-not done 
+Run `make` in the test folder.
 
 ## External hardware
 
